@@ -1,0 +1,22 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    margin: 70px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.links, .links a {
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .links a.active {
+    background-color: #00FF7F;
+  }

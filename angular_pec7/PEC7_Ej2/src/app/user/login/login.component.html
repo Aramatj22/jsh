@@ -1,0 +1,39 @@
+
+<div class="wrapper">
+  
+  <div class="form-group">
+
+    <div class="text-center mt-4 name">
+
+      <h4 class="text-center m-4 name">Login Form </h4>
+      <form (ngSubmit)="login()">
+        <div class="form-field d-flex align-items-center">
+          <div class="user-name">
+            <input type="text"
+                   placeholder="Username"
+                   required
+                   name="username"
+                   #usernameField="ngModel"
+                   [(ngModel)]="username">
+            <div *ngIf="usernameField.errors && usernameField.errors.required"></div>
+          </div>
+        </div>
+
+        <div class="form-field d-flex align-items-center">
+          <div class="password">
+            <input type="password"
+                   placeholder="Password"
+                   required
+                   name="password"
+                   #passwordField="ngModel"
+                   [(ngModel)]="password">
+            <div *ngIf="passwordField.errors && passwordField.errors.required"></div>
+          </div>
+        </div>
+        <button class="login_btn" type="submit">Login</button>
+      </form>
+    </div>
+  
+  </div>
+
+</div>
